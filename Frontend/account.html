@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale =1.0">
+    <title>Cart-Eco Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="index.html"> <link rel="icon" href="images\logo.jfif" type="image/x-icon"> </a>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+  </head>
+  <body>
+
+
+    <div class="container">
+
+
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images\logo.jfif" width="60px"></a>
+
+      </div>
+      <nav>
+        <ul id ="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images\cart.png" width="30px" height="30px"></a>
+      <img src="images\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    </div>
+
+<!------------------>
+
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="images\image1.png" width="100%">
+
+      </div>
+      <div class="col-2">
+        <div class="form-container">
+          <div class="form-btn">
+            <span onclick="login()"> Login</span>
+            <span onclick="register()">Sign Up</span>
+            <hr id="Indicator">
+
+          </div>
+          <form id="logForm">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class ="btn">Login</button>
+            <a href="#">Forgot password</a>
+          </form>
+
+          <form id="regForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Phone number">
+            <input type="text" placeholder="Address">
+            <input type="password" placeholder="Password">
+            <button type="submit" class ="btn">Register</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!------------------------------------------------------------->
+
+
+
+
+<!------------------------------------------------------->
+
+
+
+
+
+<!---------------------------------------------->
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-4-1">
+        <h1>Helpful Links</h1>
+        <p>Payments</p>
+        <p>Shipping</p>
+        <p>Return Policy</p>
+        <p>Discount Coupons</p>
+      </div>
+
+      <div class="col-4-1">
+        <h1>About Company</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Carrer</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Press</p>
+      </div>
+
+      <div class="col-4-1">
+        <h1>Follow Us</h1>
+        <p><i class ="fa fa-instagram"></i>   Instagram</p>
+        <p><i class ="fa fa-facebook-official"></i>  Facebook</p>
+        <p><i class ="fa fa-linkedin"></i>   Linkedin</p>
+        <p><i class ="fa fa-twitter"></i>   Twitter</p>
+        <p><i class= "fa fa-youtube-play "></i>    Youtube</p>
+      </div>
+
+      <div class="col-4-1 footer-image">
+        <h1>Download our App </h1>
+        <img src="images\downloads.png" >
+      </div>
+    </div>
+    <hr>
+    <p class="copyright"> Made by <b>Nikhitha</b> <i class="fa fa-heart"></i> Snowball Creations , Agnes Foundation</p>
+  </div>
+</section>
+
+
+
+<!---javascript------------>
+
+
+
+<script type="text/javascript">
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight ="0px";
+
+  function menutoggle()
+  {
+    if(MenuItems.style.maxHeight =="0px")
+    {
+      MenuItems.style.maxHeight ="200px";
+    }
+    else {
+      MenuItems.style.maxHeight ="0px";
+    }
+
+
+  }
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+  var logForm = document.getElementById("logForm");
+  var regForm = document.getElementById("regForm");
+  var Indicator =  document.getElementById("Indicator");
+  function register() {
+    regForm.style.transform = "translateX(0px)";
+    logForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+  }
+  function login() {
+    regForm.style.transform = "translateX(300px)";
+    logForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+  }
+
+</script>
+
+
+
+  </body>
+</html>
